@@ -18,7 +18,36 @@ export const cvData = {
   profile: `
 Docente técnico con trayectoria en educación media y técnica, orientado a la enseñanza práctica de informática, programación y desarrollo web. Experiencia en distintos niveles y espacios de formación, con enfoque en proyectos reales, acompañamiento de estudiantes y uso de herramientas tecnológicas actuales en el aula.
 `,
+  experience: [
+    {
+      title: "Soporte en Tecnologías de la Información",
 
+      institution: "Universidad de la Cuenca del Plata",
+
+      years: "2018 - 2020",
+
+      description:
+        "Mantenimiento de redes, instalación y soporte de equipos, administración de software, cambios de infraestructura tecnológica y capacitación a personal docente, administrativo y estudiantes.",
+
+      details: [
+        "Administración de cursos Moodle",
+        "Capacitación en aula virtual",
+        "Soporte técnico institucional",
+        "Instalación y mantenimiento de PCs",
+      ],
+    },
+
+    {
+      title: "Pasante — Edición de contenido educativo",
+
+      institution: "Universidad Nacional del Chaco Austral (UNCAus)",
+
+      years: "2012 - 2014",
+
+      description:
+        "Edición de contenido para programa de noticias educativas universitarias.",
+    },
+  ],
   trajectory: [
     {
       institution: "CPEM 57",
@@ -71,6 +100,10 @@ Docente técnico con trayectoria en educación media y técnica, orientado a la 
       title: "Sistemas Operativos I",
 
       years: "2026 - Actualidad",
+    },
+    {
+      title: "Construcción de software",
+      years: "2022 - Actualidad",
     },
   ],
 
