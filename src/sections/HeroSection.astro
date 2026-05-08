@@ -1,0 +1,67 @@
+---
+import Container from "../components/ui/Container.astro";
+import Button from "../components/ui/Button.astro";
+---
+
+<section class="section-base overflow-hidden">
+  <Container>
+    <div class="grid items-center gap-16 lg:grid-cols-2">
+      <div>
+        <p class="mb-4 text-sm font-medium text-(--primary)">
+          Docencia · Tecnología · Proyectos reales
+        </p>
+
+        <h1 class="max-w-3xl text-5xl font-bold tracking-tight md:text-6xl">
+          Educación técnica y desarrollo basado en proyectos reales.
+        </h1>
+
+        <p class="mt-6 max-w-2xl text-lg leading-relaxed text-(--text-muted)">
+          Docente técnico y desarrollador web enfocado en integrar aprendizaje
+          práctico, herramientas actuales y experiencias reales de desarrollo.
+        </p>
+
+        <div class="mt-10 flex flex-wrap gap-4">
+          <Button href="/docencia"> Ver Docencia </Button>
+
+          <Button href="/cv" variant="secondary"> Descargar CV </Button>
+        </div>
+      </div>
+
+      <div class="relative hidden lg:block">
+        <div
+          class="rounded-4xl border border-(--border) bg-(--surface) p-8 shadow-sm"
+        >
+          <div class="space-y-4">
+            <div
+              class="rounded-xl border border-(--border) bg-(--surface-muted) p-4"
+            >
+              <p class="text-sm text-(--text-muted)">
+                Construcción de Software
+              </p>
+
+              <p class="mt-2 font-medium">Aprendizaje basado en proyectos</p>
+            </div>
+
+            <div
+              class="rounded-xl border border-(--border) bg-(--surface-muted) p-4"
+            >
+              <p class="text-sm text-(--text-muted)">Desarrollo Web</p>
+
+              <p class="mt-2 font-medium">HTML · CSS · JavaScript · React</p>
+            </div>
+
+            <div
+              class="rounded-xl border border-(--border) bg-(--surface-muted) p-4"
+            >
+              <p class="text-sm text-(--text-muted)">Trabajo colaborativo</p>
+
+              <p class="mt-2 font-medium">
+                Git · Proyectos reales · IA aplicada
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </Container>
+</section>

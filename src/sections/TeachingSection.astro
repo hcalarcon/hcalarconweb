@@ -1,0 +1,54 @@
+---
+import Container from "../components/ui/Container.astro";
+import SectionTitle from "../components/ui/SectionTitle.astro";
+import Card from "../components/ui/Card.astro";
+
+const areas = [
+  {
+    title: "Construcción de Software",
+    description:
+      "Desarrollo de proyectos utilizando tecnologías web modernas y metodologías prácticas.",
+  },
+
+  {
+    title: "Desarrollo Web",
+    description:
+      "HTML, CSS y JavaScript aplicados a experiencias reales y responsive design.",
+  },
+
+  {
+    title: "Prácticas Profesionalizantes",
+    description:
+      "Trabajo colaborativo, proyectos reales y vinculación con experiencias concretas.",
+  },
+
+  {
+    title: "Sistemas Operativos",
+    description:
+      "Introducción a herramientas digitales, entornos y fundamentos técnicos.",
+  },
+];
+---
+
+<section class="section-base">
+  <Container>
+    <SectionTitle
+      title="Áreas de enseñanza"
+      subtitle="Espacios orientados al aprendizaje práctico y la construcción de proyectos."
+    />
+
+    <div class="mt-16 grid gap-6 md:grid-cols-2">
+      {
+        areas.map((area) => (
+          <Card>
+            <h3 class="text-xl font-semibold tracking-tight">{area.title}</h3>
+
+            <p class="mt-4 leading-relaxed text-(--text-muted)">
+              {area.description}
+            </p>
+          </Card>
+        ))
+      }
+    </div>
+  </Container>
+</section>

@@ -1,0 +1,32 @@
+---
+import Container from "../components/ui/Container.astro";
+import SectionTitle from "../components/ui/SectionTitle.astro";
+
+const items = [
+  "Aprendizaje basado en proyectos",
+  "Trabajo colaborativo",
+  "Uso de herramientas reales",
+  "Git y control de versiones",
+  "Resolución práctica de problemas",
+  "Tecnologías actuales",
+];
+---
+
+<section class="section-base">
+  <Container>
+    <SectionTitle
+      title="Metodología"
+      subtitle="Una propuesta centrada en experiencias reales de aprendizaje."
+    />
+
+    <div class="mt-16 grid gap-4 md:grid-cols-2">
+      {
+        items.map((item) => (
+          <div class="rounded-2xl border border-(--border) bg-(--surface) p-5">
+            <p class="font-medium">{item}</p>
+          </div>
+        ))
+      }
+    </div>
+  </Container>
+</section>

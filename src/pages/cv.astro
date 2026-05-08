@@ -1,0 +1,216 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import Container from "../components/ui/Container.astro";
+import SectionTitle from "../components/ui/SectionTitle.astro";
+import Button from "../components/ui/Button.astro";
+
+import { cvData } from "../data/cv";
+---
+
+<MainLayout
+  title="CV Docente | HCALARCON"
+  description="Trayectoria docente y perfil profesional."
+>
+  <section class="py-20 print:py-10">
+    <Container class="max-w-5xl">
+      <div
+        class="rounded-4xl border border-(--border) bg-(--surface) p-8 shadow-sm md:p-12 print-no-border print-no-shadow print:p-0"
+      >
+        <!-- HEADER -->
+
+        <header
+          class="flex flex-col gap-8 border-b border-(--border) pb-10 md:flex-row md:items-end md:justify-between"
+        >
+          <div>
+            <p class="mb-4 text-sm font-medium text-(--primary)">CV DOCENTE</p>
+
+            <h1 class="text-4xl font-bold tracking-tight md:text-5xl">
+              {cvData.personal.name}
+            </h1>
+
+            <p class="mt-4 text-lg text-(--text-muted)">
+              {cvData.personal.role}
+            </p>
+          </div>
+
+          <div class="space-y-2 text-sm text-(--text-muted)">
+            <p>{cvData.personal.degree}</p>
+
+            <p>{cvData.personal.location}</p>
+
+            <p>{cvData.personal.email}</p>
+
+            <p>{cvData.personal.phone}</p>
+
+            <p>{cvData.personal.website}</p>
+          </div>
+        </header>
+
+        <!-- PERFIL -->
+
+        <section class="mt-14">
+          <SectionTitle title="Perfil profesional" />
+
+          <p class="mt-6 max-w-4xl leading-relaxed text-(--text-muted)">
+            {cvData.profile}
+          </p>
+        </section>
+
+        <!-- TRAYECTORIA -->
+
+        <section class="mt-16">
+          <SectionTitle title="Trayectoria docente" />
+
+          <div class="mt-10 space-y-10">
+            {
+              cvData.trajectory.map((item) => (
+                <div>
+                  <div class="flex flex-col gap-2 md:flex-row md:items-center md:justify-between">
+                    <h3 class="text-xl font-semibold">{item.institution}</h3>
+
+                    <span class="text-sm text-(--text-muted)">
+                      {item.years}
+                    </span>
+                  </div>
+
+                  <p class="mt-4 leading-relaxed text-(--text-muted)">
+                    {item.description}
+                  </p>
+                </div>
+              ))
+            }
+          </div>
+        </section>
+
+        <!-- EPET -->
+
+        <section class="mt-16">
+          <SectionTitle title="EPET N° 12 — Tecnicatura en Programación" />
+
+          <div class="mt-10 grid gap-4 md:grid-cols-2">
+            {
+              cvData.epet.map((item) => (
+                <div class="rounded-2xl border border-(--border) bg-(--surface-muted) p-5">
+                  <p class="font-semibold">{item.title}</p>
+
+                  <p class="mt-2 text-sm text-(--text-muted)">{item.years}</p>
+                </div>
+              ))
+            }
+          </div>
+        </section>
+
+        <!-- METODOLOGÍA -->
+
+        <section class="mt-16">
+          <SectionTitle title="Metodología e innovación pedagógica" />
+
+          <div class="mt-10 space-y-8">
+            {
+              cvData.methodology.map((item) => (
+                <div>
+                  <h3 class="text-xl font-semibold">{item.title}</h3>
+
+                  <p class="mt-3 leading-relaxed text-(--text-muted)">
+                    {item.description}
+                  </p>
+                </div>
+              ))
+            }
+          </div>
+        </section>
+
+        <!-- PUNTAJE -->
+
+        <section class="mt-16">
+          <SectionTitle title="Puntaje docente" />
+
+          <div
+            class="mt-10 rounded-[2rem] border border-(--border) bg-(--surface-muted) p-8"
+          >
+            <div
+              class="flex flex-col gap-8 md:flex-row md:items-end md:justify-between"
+            >
+              <div>
+                <p class="text-sm text-(--text-muted)">Puntaje actual</p>
+
+                <div class="mt-2 flex items-end gap-2">
+                  <span class="text-6xl font-bold tracking-tight">
+                    {cvData.teachingScore.current}
+                  </span>
+
+                  <span class="mb-2 text-lg text-(--text-muted)">
+                    / {cvData.teachingScore.max}
+                  </span>
+                </div>
+              </div>
+
+              <div class="grid gap-3">
+                {
+                  cvData.teachingScore.history.map((item) => (
+                    <div class="flex items-center gap-4 text-sm">
+                      <span class="w-16 text-(--text-muted)">{item.year}</span>
+
+                      <span class="font-medium">{item.score}</span>
+                    </div>
+                  ))
+                }
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- PROYECTOS -->
+
+        <section class="mt-16">
+          <SectionTitle title="Proyectos educativos" />
+
+          <div class="mt-10 space-y-8">
+            {
+              cvData.projects.map((project) => (
+                <div>
+                  <h3 class="text-xl font-semibold">{project.name}</h3>
+
+                  <p class="mt-3 leading-relaxed text-(--text-muted)">
+                    {project.description}
+                  </p>
+                </div>
+              ))
+            }
+          </div>
+        </section>
+
+        <!-- TECNOLOGÍAS -->
+
+        <section class="mt-16">
+          <SectionTitle
+            title="Herramientas y tecnologías"
+            subtitle="Utilizadas en experiencias educativas y desarrollo de proyectos."
+          />
+
+          <div class="mt-8 flex flex-wrap gap-3">
+            {
+              cvData.technologies.map((tech) => (
+                <span class="rounded-xl border border-(--border) bg-(--surface-muted) px-4 py-2 text-sm">
+                  {tech}
+                </span>
+              ))
+            }
+          </div>
+        </section>
+
+        <!-- CTA PDF -->
+
+        <section class="mt-20 print:hidden">
+          <div
+            class="flex flex-col gap-4 border-t border-(--border) pt-10 md:flex-row"
+          >
+            <Button onclick="window.print()"> Descargar PDF </Button>
+
+            <Button href="/" variant="secondary"> Volver al inicio </Button>
+          </div>
+        </section>
+      </div>
+    </Container>
+  </section>
+</MainLayout>

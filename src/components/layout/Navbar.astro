@@ -1,0 +1,38 @@
+---
+import Container from "../ui/Container.astro";
+---
+
+<header
+  class="sticky top-0 z-50 border-b border-(--border) bg-(--background)/80 backdrop-blur print:hidden"
+>
+  <Container>
+    <nav class="flex h-16 items-center justify-between">
+      <a href="/" class="font-heading text-sm font-semibold tracking-wide">
+        HCALARCON
+      </a>
+
+      <div class="flex items-center gap-6 text-sm">
+        <a
+          href="/docencia"
+          class="text-(--text-muted) transition hover:text-(--text)"
+        >
+          Docencia
+        </a>
+
+        <a
+          href="/cv"
+          class="text-(--text-muted) transition hover:text-(--text)"
+        >
+          CV
+        </a>
+
+        <a
+          href="/contacto"
+          class="text-(--text-muted) transition hover:text-(--text)"
+        >
+          Contacto
+        </a>
+      </div>
+    </nav>
+  </Container>
+</header>

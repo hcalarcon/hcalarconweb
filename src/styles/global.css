@@ -1,0 +1,145 @@
+@import "tailwindcss";
+
+@import "@fontsource-variable/inter";
+@import "@fontsource-variable/sora";
+
+:root {
+  /* Colors */
+  --background: #fafafa;
+  --surface: #ffffff;
+  --surface-muted: #f5f5f5;
+
+  --text: #171717;
+  --text-muted: #6b7280;
+
+  --border: #e5e7eb;
+
+  --primary: #0f766e;
+  --primary-hover: #115e59;
+  --primary-soft: #ccfbf1;
+
+  /* Radius */
+  --radius-sm: 0.5rem;
+  --radius-md: 0.75rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.5rem;
+
+  /* Shadows */
+  --shadow-soft: 0 1px 2px rgba(0, 0, 0, 0.04);
+
+  /* Fonts */
+  --font-heading: "Sora Variable", sans-serif;
+  --font-body: "Inter Variable", sans-serif;
+}
+
+.dark {
+  --background: #111827;
+  --surface: #1f2937;
+
+  --text: #f9fafb;
+  --text-muted: #9ca3af;
+
+  --border: #374151;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--text);
+
+  font-family: var(--font-body);
+
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+
+  min-height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+  letter-spacing: -0.03em;
+}
+
+::selection {
+  background: var(--primary);
+  color: white;
+}
+
+.font-heading {
+  font-family: var(--font-heading);
+}
+
+.font-body {
+  font-family: var(--font-body);
+}
+
+.container-base {
+  @apply max-w-6xl mx-auto px-6;
+}
+
+.section-base {
+  @apply py-24;
+}
+@media print {
+  :root {
+    --background: white;
+    --surface: white;
+    --surface-muted: white;
+
+    --text: black;
+    --text-muted: #444;
+
+    --border: #d1d5db;
+  }
+
+  html,
+  body {
+    background: white !important;
+  }
+
+  body {
+    font-size: 12px;
+    line-height: 1.4;
+  }
+
+  section {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    break-after: avoid;
+    page-break-after: avoid;
+  }
+
+  .print-compact {
+    margin-top: 2rem !important;
+  }
+
+  .print-no-border {
+    border: none !important;
+  }
+
+  .print-no-shadow {
+    box-shadow: none !important;
+  }
+
+  .print-tight {
+    gap: 0.75rem !important;
+  }
+
+  .print-hide {
+    display: none !important;
+  }
+}
