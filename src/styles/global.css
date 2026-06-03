@@ -81,13 +81,6 @@ h6 {
   font-family: var(--font-body);
 }
 
-.container-base {
-  @apply max-w-6xl mx-auto px-6;
-}
-
-.section-base {
-  @apply py-24;
-}
 @media print {
   :root {
     --background: white;

@@ -1,0 +1,346 @@
+[
+  {
+    "id": "N001",
+    "pregunta": "¿Qué significa el término 'estática' en el desarrollo web?"
+  },
+  {
+    "id": "N002",
+    "pregunta": "¿Cuál es la diferencia entre Internet y la Web?"
+  },
+  {
+    "id": "N003",
+    "pregunta": "¿Qué significan HTML, HTTP y HTTPS?"
+  },
+  {
+    "id": "N004",
+    "pregunta": "¿Qué es un navegador web y cuál es su función?"
+  },
+  {
+    "id": "N005",
+    "pregunta": "Menciona al menos tres navegadores web."
+  },
+  {
+    "id": "N006",
+    "pregunta": "¿Qué es HTML y para qué sirve?"
+  },
+  {
+    "id": "N007",
+    "pregunta": "¿HTML es un lenguaje de programación? Justifica."
+  },
+  {
+    "id": "N008",
+    "pregunta": "¿Bajo qué arquitectura funciona la Web?"
+  },
+  {
+    "id": "N009",
+    "pregunta": "Explica el modelo cliente-servidor."
+  },
+  {
+    "id": "N010",
+    "pregunta": "¿Qué función cumple el cliente en una aplicación web?"
+  },
+  {
+    "id": "N011",
+    "pregunta": "¿Qué función cumple el servidor en una aplicación web?"
+  },
+  {
+    "id": "N012",
+    "pregunta": "¿Cuáles son las partes principales de una etiqueta HTML?"
+  },
+  {
+    "id": "N013",
+    "pregunta": "¿Qué diferencia existe entre una etiqueta de apertura y una de cierre?"
+  },
+  {
+    "id": "N014",
+    "pregunta": "¿Qué es un atributo HTML?"
+  },
+  {
+    "id": "N015",
+    "pregunta": "¿Qué tipos de atributos existen?"
+  },
+  {
+    "id": "N016",
+    "pregunta": "¿Es obligatorio utilizar class=\"\" en una etiqueta? Explica."
+  },
+  {
+    "id": "N017",
+    "pregunta": "¿Qué función cumple el atributo alt en una imagen?"
+  },
+  {
+    "id": "N018",
+    "pregunta": "¿Qué función cumple el atributo aria-label?"
+  },
+  {
+    "id": "N019",
+    "pregunta": "¿Cuál es la estructura básica de un documento HTML?"
+  },
+  {
+    "id": "N020",
+    "pregunta": "¿Para qué sirve la etiqueta html?"
+  },
+  {
+    "id": "N021",
+    "pregunta": "¿Para qué sirve la etiqueta head?"
+  },
+  {
+    "id": "N022",
+    "pregunta": "¿Para qué sirve la etiqueta body?"
+  },
+  {
+    "id": "N023",
+    "pregunta": "¿La información dentro de head aparece en el viewport? Explica."
+  },
+  {
+    "id": "N024",
+    "pregunta": "¿Qué diferencia existe entre elementos block e inline?"
+  },
+  {
+    "id": "N025",
+    "pregunta": "¿Qué es un hipervínculo y para qué sirve?"
+  },
+  {
+    "id": "N026",
+    "pregunta": "¿Para qué sirve el atributo href?"
+  },
+  {
+    "id": "N027",
+    "pregunta": "¿Qué tipos de direccionamiento puede utilizar una URL?"
+  },
+  {
+    "id": "N028",
+    "pregunta": "¿Qué diferencia existe entre una URL absoluta y una URL relativa?"
+  },
+  {
+    "id": "N029",
+    "pregunta": "¿Para qué sirve la etiqueta form?"
+  },
+  {
+    "id": "N030",
+    "pregunta": "¿Para qué sirve el atributo action en un formulario?"
+  },
+  {
+    "id": "N031",
+    "pregunta": "¿Puede un input estar fuera de un formulario? Explica."
+  },
+  {
+    "id": "N032",
+    "pregunta": "¿Para qué sirven table, tr, th y td?"
+  },
+  {
+    "id": "N033",
+    "pregunta": "¿Para qué sirven dl, dt y dd?"
+  },
+  {
+    "id": "N034",
+    "pregunta": "Proporciona ejemplos de al menos cinco etiquetas HTML y explica para qué sirven."
+  },
+  {
+    "id": "N035",
+    "pregunta": "¿Qué tipos de etiquetas existen según el contenido que representan?"
+  },
+  {
+    "id": "N036",
+    "pregunta": "¿Qué tipos de etiquetas existen según la importancia de la información?"
+  },
+  {
+    "id": "N037",
+    "pregunta": "¿Por qué es importante utilizar etiquetas semánticas?"
+  },
+  {
+    "id": "N038",
+    "pregunta": "¿Qué ventajas ofrece HTML para la construcción de sitios web?"
+  },
+  {
+    "id": "N039",
+    "pregunta": "¿Qué tecnologías suelen trabajar junto con HTML?"
+  },
+  {
+    "id": "N040",
+    "pregunta": "Explica brevemente cómo se visualiza una página web desde que escribes una dirección hasta que aparece en pantalla."
+  },
+  {
+    "id": "H001",
+    "pregunta": "¿Qué ocurrió en 1989 relacionado con la World Wide Web?"
+  },
+  {
+    "id": "H002",
+    "pregunta": "¿Qué tecnologías comenzaron a desarrollarse en 1990?"
+  },
+  {
+    "id": "H003",
+    "pregunta": "¿Qué importancia tuvo la primera página web de 1991?"
+  },
+  {
+    "id": "H004",
+    "pregunta": "¿Qué aportó HTML a la Web en 1992?"
+  },
+  {
+    "id": "H005",
+    "pregunta": "¿Por qué Mosaic fue importante para la expansión de Internet?"
+  },
+  {
+    "id": "H006",
+    "pregunta": "Menciona dos acontecimientos importantes ocurridos en 1994."
+  },
+  {
+    "id": "H007",
+    "pregunta": "¿Qué tecnologías aparecieron en 1995 y cómo impactaron en la Web?"
+  },
+  {
+    "id": "H008",
+    "pregunta": "¿Qué problema vino a resolver CSS en 1996?"
+  },
+  {
+    "id": "H009",
+    "pregunta": "¿Por qué fue importante la aparición de Google en 1998?"
+  },
+  {
+    "id": "H010",
+    "pregunta": "¿Qué permitía AJAX y por qué fue relevante?"
+  },
+  {
+    "id": "H011",
+    "pregunta": "¿Qué importancia tuvieron Wikipedia y JSON?"
+  },
+  {
+    "id": "H012",
+    "pregunta": "¿Qué papel cumplió Firefox en la evolución de los navegadores?"
+  },
+  {
+    "id": "H013",
+    "pregunta": "¿Cómo ayudó WordPress a la creación de sitios web?"
+  },
+  {
+    "id": "H014",
+    "pregunta": "¿Qué se entiende por Web 2.0?"
+  },
+  {
+    "id": "H015",
+    "pregunta": "¿Cómo cambió YouTube el uso de Internet?"
+  },
+  {
+    "id": "H016",
+    "pregunta": "¿Qué aportaron jQuery y AWS?"
+  },
+  {
+    "id": "H017",
+    "pregunta": "¿Por qué fueron importantes el iPhone y GitHub?"
+  },
+  {
+    "id": "H018",
+    "pregunta": "¿Qué innovaciones introdujo HTML5?"
+  },
+  {
+    "id": "H019",
+    "pregunta": "¿Qué permitió Node.js dentro del ecosistema JavaScript?"
+  },
+  {
+    "id": "H020",
+    "pregunta": "¿Qué es el Responsive Design y por qué fue necesario?"
+  },
+  {
+    "id": "H021",
+    "pregunta": "¿Qué mejoras incorporó CSS3?"
+  },
+  {
+    "id": "H022",
+    "pregunta": "¿Qué son los Web Components?"
+  },
+  {
+    "id": "H023",
+    "pregunta": "¿Por qué React cambió el desarrollo frontend?"
+  },
+  {
+    "id": "H024",
+    "pregunta": "¿Qué ocurrió con HTML5 en 2014?"
+  },
+  {
+    "id": "H025",
+    "pregunta": "¿Qué cambios importantes llegaron con ES6?"
+  },
+  {
+    "id": "H026",
+    "pregunta": "¿Qué ventajas aporta TypeScript?"
+  },
+  {
+    "id": "H027",
+    "pregunta": "¿Qué es WebAssembly?"
+  },
+  {
+    "id": "H028",
+    "pregunta": "¿Qué impacto tuvo el debate sobre privacidad digital en 2018?"
+  },
+  {
+    "id": "H029",
+    "pregunta": "¿Qué significa que HTML sea un estándar vivo?"
+  },
+  {
+    "id": "H030",
+    "pregunta": "¿Cómo aceleró la pandemia la adopción de tecnologías web?"
+  },
+  {
+    "id": "H031",
+    "pregunta": "¿Qué es Web3?"
+  },
+  {
+    "id": "H032",
+    "pregunta": "¿Cómo comenzó a integrarse la inteligencia artificial en la Web?"
+  },
+  {
+    "id": "H033",
+    "pregunta": "¿Qué cambios produjo la IA generativa en el desarrollo web?"
+  },
+  {
+    "id": "H034",
+    "pregunta": "¿Por qué hoy se considera a la Web una plataforma universal?"
+  },
+  {
+    "id": "S001",
+    "pregunta": "Si tiene patas y ladra es..."
+  },
+  {
+    "id": "S002",
+    "pregunta": "¿Quién ganó el Mundial de Fútbol 2022?"
+  },
+  {
+    "id": "S003",
+    "pregunta": "Completa: HTML significa HyperText _____ Language."
+  },
+  {
+    "id": "S004",
+    "pregunta": "¿En qué país se encuentra el Obelisco?"
+  },
+  {
+    "id": "S005",
+    "pregunta": "¿Qué red social es conocida por sus videos cortos verticales?"
+  },
+  {
+    "id": "S006",
+    "pregunta": "¿Qué streamer argentino es conocido como 'Coscu'?"
+  },
+  {
+    "id": "S007",
+    "pregunta": "¿Qué bebida se prepara tradicionalmente con yerba mate?"
+  },
+  {
+    "id": "S008",
+    "pregunta": "¿Qué cantante interpreta la canción 'BZRP Music Sessions #53' junto a Bizarrap?"
+  },
+  {
+    "id": "S009",
+    "pregunta": "Luzu TV y Olga son ejemplos de..."
+  },
+  {
+    "id": "S010",
+    "pregunta": "¿Qué aplicación suele representarse con un ícono verde y permite enviar mensajes?"
+  },
+  {
+    "id": "S011",
+    "pregunta": "¿Qué significa la sigla IA?"
+  },
+  {
+    "id": "S012",
+    "pregunta": "¿Quién es más rápido: Flash o una consulta SQL sin índice?"
+  }
+]

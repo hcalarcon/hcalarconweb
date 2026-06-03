@@ -1,0 +1,224 @@
+---
+import preguntasData from "../data/examenWeb/preguntas.json";
+
+const preguntas = JSON.stringify(preguntasData);
+---
+
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Examen Web</title>
+  </head>
+
+  <body>
+    <main>
+      <h1>Examen de Programación Estática</h1>
+
+      <p>
+        Presione el botón para generar su examen. Solo se permite una vez.
+      </p>
+
+      <div class="actions">
+        <button id="generarBtn" type="button">Generar examen</button>
+      </div>
+
+      <div id="resultado" class="resultado"></div>
+    </main>
+
+    <script define:vars={{ preguntas }}>
+      const STORAGE_KEY = "examen-web-2026";
+
+      const banco = JSON.parse(preguntas);
+
+      const generarBtn = document.getElementById("generarBtn");
+      const resultado = document.getElementById("resultado");
+
+      function shuffle(array) {
+        const arr = [...array];
+
+        for (let i = arr.length - 1; i > 0; i--) {
+          const j = Math.floor(Math.random() * (i + 1));
+          [arr[i], arr[j]] = [arr[j], arr[i]];
+        }
+
+        return arr;
+      }
+
+      function tomarAleatorias(lista, cantidad) {
+        return shuffle(lista).slice(0, cantidad);
+      }
+
+      function generarExamen() {
+        const normales = banco.filter((p) => p.id.startsWith("N"));
+
+        const historia = banco.filter((p) => p.id.startsWith("H"));
+
+        const suerte = banco.filter((p) => p.id.startsWith("S"));
+
+        const normalesSeleccionadas = tomarAleatorias(normales, 7);
+
+        const historiaSeleccionadas = tomarAleatorias(historia, 2);
+
+        let extra = [];
+
+        if (Math.random() < 0.3) {
+          extra = tomarAleatorias(suerte, 1);
+        } else {
+          const idsUsados = new Set(normalesSeleccionadas.map((p) => p.id));
+
+          const normalesDisponibles = normales.filter(
+            (p) => !idsUsados.has(p.id),
+          );
+
+          extra = tomarAleatorias(normalesDisponibles, 1);
+        }
+
+        const examen = shuffle([
+          ...normalesSeleccionadas,
+          ...historiaSeleccionadas,
+          ...extra,
+        ]);
+
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(examen));
+
+        return examen;
+      }
+
+      function render(examen) {
+        resultado.innerHTML = "";
+
+        const titulo = document.createElement("h2");
+        titulo.textContent = "Preguntas";
+        resultado.appendChild(titulo);
+
+        const ol = document.createElement("ol");
+
+        examen.forEach((pregunta) => {
+          const li = document.createElement("li");
+
+          li.innerHTML = `
+            <div style="margin-bottom:20px;">
+              <strong>${pregunta.pregunta}</strong>
+              <hr />
+            </div>
+          `;
+
+          ol.appendChild(li);
+        });
+
+        resultado.appendChild(ol);
+
+        const aviso = document.createElement("p");
+        aviso.innerHTML =
+          "<strong>Copie las preguntas en su hoja antes de continuar.</strong>";
+
+        resultado.appendChild(aviso);
+
+        generarBtn.disabled = true;
+        generarBtn.textContent = "Examen generado";
+      }
+
+      const examenGuardado = localStorage.getItem(STORAGE_KEY);
+
+      if (examenGuardado) {
+        render(JSON.parse(examenGuardado));
+      } else {
+        generarBtn.disabled = false;
+        generarBtn.textContent = "Generar examen";
+      }
+
+      generarBtn.addEventListener("click", () => {
+        if (localStorage.getItem(STORAGE_KEY)) return;
+
+        const examen = generarExamen();
+        render(examen);
+      });
+    </script>
+
+    <style>
+      body {
+        font-family: system-ui, sans-serif;
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 2rem;
+        line-height: 1.6;
+        box-sizing: border-box;
+      }
+
+      main {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+      }
+
+      h1 {
+        margin-bottom: 0.25rem;
+        font-size: clamp(1.8rem, 5vw, 2.4rem);
+      }
+
+      p {
+        margin: 0;
+      }
+
+      .actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.75rem;
+      }
+
+      button {
+        padding: 0.8rem 1.1rem;
+        border: 0;
+        border-radius: 999px;
+        cursor: pointer;
+        font-weight: 600;
+        background: #2563eb;
+        color: #fff;
+        transition: opacity 0.2s ease;
+      }
+
+      button:disabled {
+        cursor: not-allowed;
+        opacity: 0.7;
+      }
+
+      .resultado {
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
+      }
+
+      ol {
+        padding-left: 1.1rem;
+        margin: 0;
+      }
+
+      li {
+        margin-bottom: 1rem;
+      }
+
+      hr {
+        margin-top: 1rem;
+      }
+
+      @media (max-width: 640px) {
+        body {
+          padding: 1rem;
+        }
+
+        .actions {
+          flex-direction: column;
+        }
+
+        button {
+          width: 100%;
+        }
+
+        ol {
+          padding-left: 1rem;
+        }
+      }
+    </style>
+  </body>
+</html>
