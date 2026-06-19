@@ -3,15 +3,18 @@ import Container from "../ui/Container.astro";
 ---
 
 <header
-  class="sticky top-0 z-50 border-b border-(--border) bg-(--background)/80 backdrop-blur print:hidden"
+  class="sticky top-0 z-50 border-b border-(--border) bg-(--background)/85 backdrop-blur-xl print:hidden"
 >
   <Container>
     <nav class="flex h-16 items-center justify-between">
-      <a href="/" class="font-heading text-sm font-semibold tracking-wide">
+      <a
+        href="/"
+        class="font-heading text-sm font-semibold tracking-[0.3em] text-(--text)"
+      >
         HCALARCON
       </a>
 
-      <div class="flex items-center gap-6 text-sm">
+      <div class="flex items-center gap-5 text-sm md:gap-6">
         <a
           href="/docencia"
           class="text-(--text-muted) transition hover:text-(--text)"

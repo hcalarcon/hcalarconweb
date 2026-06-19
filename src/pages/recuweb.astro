@@ -1,0 +1,737 @@
+---
+import preguntasData from "../data/examenWeb/recu.json";
+const preguntas = preguntasData;
+---
+
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MiauWorld — El portal gatuno</title>
+  </head>
+
+  <body>
+    <!-- MODAL -->
+    <div class="mw-modal-wrap" id="modalWrap">
+      <div class="mw-modal">
+        <div class="mw-modal-cat">🐱</div>
+        <div class="mw-tag">Bienvenido</div>
+        <h2>MiauWorld</h2>
+        <p>
+          El portal gatuno más completo de la web. Razas, curiosidades, galería
+          y mucho más.
+        </p>
+        <button class="mw-modal-btn" id="generarBtn">Entrar al sitio →</button>
+        <p
+          id="modal-aviso"
+          style="display:none; margin-top:.75rem; font-size:.8rem; color:#999;"
+        >
+          Ya generaste tu examen anteriormente.
+        </p>
+      </div>
+    </div>
+
+    <!-- NAV -->
+    <nav class="mw-nav" id="mw-nav">
+      <div class="mw-brand"><span>●</span> MiauWorld</div>
+      <ul class="mw-navlinks">
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Razas</a></li>
+        <li><a href="#">Galería</a></li>
+        <li><a href="#">Curiosidades</a></li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+    </nav>
+
+    <!-- HERO -->
+    <div class="mw-hero" id="mw-hero">
+      <div class="mw-hero-left">
+        <h1>Todo sobre<br /><em>gatitos</em><br />en un lugar</h1>
+        <p>
+          Razas, cuidados, historias y la galería más tierna de internet. Porque
+          los gatos merecen su propio portal.
+        </p>
+        <a href="#razas" class="mw-hero-btn">Explorar razas →</a>
+      </div>
+      <div class="mw-hero-right">
+        <img
+          src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=800&q=80"
+          alt="Gato mirando a cámara"
+        />
+        <div class="mw-hero-badge">📍 Foto por Loan en Unsplash</div>
+      </div>
+    </div>
+
+    <!-- RAZAS -->
+    <section class="mw-section" id="razas">
+      <p class="mw-tag">Razas destacadas</p>
+      <h2 class="mw-section-title">Los protagonistas del sitio</h2>
+      <p class="mw-section-sub">
+        Conocé las razas más populares y sus características principales.
+      </p>
+      <div class="mw-cards" id="mw-cards">
+        <article class="mw-card" id="card-persa">
+          <div class="mw-card-img">
+            <img
+              src="https://images.unsplash.com/photo-1573865526739-10659fec78a5?w=400&q=80"
+              alt="Gato persa"
+            />
+          </div>
+          <div class="mw-card-body">
+            <div class="mw-card-tag">Pelaje largo</div><h3>Persa</h3><p>
+              Tranquilo y aristocrático. Perfecto para vida en departamento.
+            </p>
+          </div>
+        </article>
+        <article class="mw-card" id="card-siames">
+          <div class="mw-card-img">
+            <img
+              src="https://images.unsplash.com/photo-1596854407944-bf87f6fdd49e?w=400&q=80"
+              alt="Gato siamés"
+            />
+          </div>
+          <div class="mw-card-body">
+            <div class="mw-card-tag">Muy vocal</div><h3>Siamés</h3><p>
+              Social y comunicativo. Tiene un patrón de color único llamado
+              point coloring.
+            </p>
+          </div>
+        </article>
+        <article class="mw-card" id="card-maine">
+          <div class="mw-card-img">
+            <img
+              src="https://images.unsplash.com/photo-1568043397691-8bdb65a0e576?w=400&q=80"
+              alt="Maine Coon"
+            />
+          </div>
+          <div class="mw-card-body">
+            <div class="mw-card-tag">Raza grande</div><h3>Maine Coon</h3><p>
+              Amigable y juguetón. Una de las razas domésticas más grandes del
+              mundo.
+            </p>
+          </div>
+        </article>
+        <article class="mw-card" id="card-bengal">
+          <div class="mw-card-img">
+            <img
+              src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?w=400&q=80"
+              alt="Gato bengal"
+            />
+          </div>
+          <div class="mw-card-body">
+            <div class="mw-card-tag">Patrón salvaje</div><h3>Bengal</h3><p>
+              Marcas de leopardo y personalidad activa. Le encanta el agua.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- GALERÍA -->
+    <div class="mw-gallery-bg">
+      <div class="mw-gallery-inner">
+        <p class="mw-tag">Galería</p>
+        <h2 class="mw-section-title">Los más tiernos de la web</h2>
+        <div class="mw-gallery-grid" id="mw-gallery">
+          <div class="mw-gallery-item tall">
+            <img
+              src="https://images.unsplash.com/photo-1529778873920-4da4926a72c2?w=600&q=80"
+              alt="Gato"
+            />
+          </div>
+          <div class="mw-gallery-item">
+            <img
+              src="https://images.unsplash.com/photo-1495360010541-f48722b4885c?w=400&q=80"
+              alt="Gato"
+            />
+          </div>
+          <div class="mw-gallery-item">
+            <img
+              src="https://images.unsplash.com/photo-1519052537078-e6302a4968d4?w=400&q=80"
+              alt="Gato"
+            />
+          </div>
+          <div class="mw-gallery-item">
+            <img
+              src="https://images.unsplash.com/photo-1533743983669-94fa5c4338ec?w=400&q=80"
+              alt="Gato"
+            />
+          </div>
+          <div class="mw-gallery-item">
+            <img
+              src="https://images.unsplash.com/photo-1574158622682-e40e69881006?w=400&q=80"
+              alt="Gato"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CURIOSIDADES -->
+    <section class="mw-section">
+      <p class="mw-tag">Curiosidades</p>
+      <h2 class="mw-section-title">¿Sabías que...?</h2>
+      <p class="mw-section-sub">
+        Datos fascinantes sobre nuestros amigos felinos.
+      </p>
+      <div class="mw-facts">
+        <div class="mw-fact">
+          <div class="mw-fact-icon">💤</div><div class="mw-fact-text">
+            <h4>Duermen mucho</h4><p>
+              Los gatos pasan entre 12 y 16 horas diarias durmiendo.
+            </p>
+          </div>
+        </div>
+        <div class="mw-fact">
+          <div class="mw-fact-icon">🦘</div><div class="mw-fact-text">
+            <h4>Salto increíble</h4><p>
+              Pueden saltar hasta 6 veces su propia longitud de un solo impulso.
+            </p>
+          </div>
+        </div>
+        <div class="mw-fact">
+          <div class="mw-fact-icon">🔊</div><div class="mw-fact-text">
+            <h4>Muy comunicativos</h4><p>
+              Tienen más de 100 vocalizaciones diferentes para expresarse.
+            </p>
+          </div>
+        </div>
+        <div class="mw-fact">
+          <div class="mw-fact-icon">🌙</div><div class="mw-fact-text">
+            <h4>Visión nocturna</h4><p>
+              Ven 6 veces mejor que los humanos en la oscuridad.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="mw-footer">
+      <div class="mw-footer-inner">
+        <div class="mw-footer-cols">
+          <div>
+            <h4>● MiauWorld</h4>
+            <p>
+              El portal gatuno más completo de la web. Información, galería y
+              curiosidades sobre gatos de todo el mundo.
+            </p>
+          </div>
+          <div>
+            <h4>Secciones</h4>
+            <ul>
+              <li><a href="#">Inicio</a></li>
+              <li><a href="#">Razas</a></li>
+              <li><a href="#">Galería</a></li>
+              <li><a href="#">Curiosidades</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Contacto</h4>
+            <p>miau@miauworld.com</p>
+            <p style="margin-top:.5rem">Buenos Aires, Argentina</p>
+          </div>
+        </div>
+        <div class="mw-footer-bottom">
+          © 2026 MiauWorld — Hecho con amor gatuno
+        </div>
+        <div id="footer-oculto"></div>
+      </div>
+    </footer>
+
+    <script define:vars={{ preguntas }}>
+      const STORAGE_KEY = "recuperatorio-web-2026";
+      const banco = preguntas;
+      const modalWrap = document.getElementById("modalWrap");
+      const generarBtn = document.getElementById("generarBtn");
+      const modalAviso = document.getElementById("modal-aviso");
+
+      function shuffle(array) {
+        const arr = [...array];
+        for (let i = arr.length - 1; i > 0; i--) {
+          const j = Math.floor(Math.random() * (i + 1));
+          [arr[i], arr[j]] = [arr[j], arr[i]];
+        }
+        return arr;
+      }
+
+      function tomarAleatorias(lista, n) {
+        return shuffle(lista).slice(0, n);
+      }
+
+      function generarExamen() {
+        const normales = banco.filter((p) => p.id.startsWith("N"));
+        const historia = banco.filter((p) => p.id.startsWith("H"));
+        if (normales.length < 8 || historia.length < 2) {
+          console.error("Banco insuficiente", {
+            normales: normales.length,
+            historia: historia.length,
+          });
+          return null;
+        }
+        return shuffle([
+          ...tomarAleatorias(normales, 8),
+          ...tomarAleatorias(historia, 2),
+        ]);
+      }
+
+      function esconderPreguntas(examen) {
+        // 1 — comentario en <head>
+        document.head.insertAdjacentHTML(
+          "beforeend",
+          `<!-- P1: ${examen[0].pregunta} -->`,
+        );
+
+        // 2 — meta tag
+        const meta = document.createElement("meta");
+        meta.name = "descripcion-gatuna";
+        meta.content = examen[1].pregunta;
+        document.head.appendChild(meta);
+
+        // 3 — data-attribute en nav
+        document.getElementById("mw-nav").dataset.tagline = examen[2].pregunta;
+
+        // 4 — aria-label en hero
+        document
+          .getElementById("mw-hero")
+          .setAttribute("aria-label", examen[3].pregunta);
+
+        // 5 — title en primera card
+        document.getElementById("card-persa").title = examen[4].pregunta;
+
+        // 6 — data-attribute en segunda card
+        document.getElementById("card-siames").dataset.info =
+          examen[5].pregunta;
+
+        // 7 — atributo personalizado en galería
+        document
+          .getElementById("mw-gallery")
+          .setAttribute("data-galeria-info", examen[6].pregunta);
+
+        // 8 — input hidden en footer
+        const hidden = document.createElement("input");
+        hidden.type = "hidden";
+        hidden.id = "p8";
+        hidden.value = examen[7].pregunta;
+        document.getElementById("footer-oculto").appendChild(hidden);
+
+        // 9 — script JSON
+        const script = document.createElement("script");
+        script.type = "application/json";
+        script.id = "p9";
+        script.textContent = JSON.stringify({ pregunta: examen[8].pregunta });
+        document.body.appendChild(script);
+
+        // 10 — template al final del body
+        const tmpl = document.createElement("template");
+        tmpl.id = "p10";
+        tmpl.innerHTML = `<p>${examen[9].pregunta}</p>`;
+        document.body.appendChild(tmpl);
+      }
+
+      function cerrarModal() {
+        modalWrap.style.opacity = "0";
+        setTimeout(() => (modalWrap.style.display = "none"), 380);
+      }
+
+      const guardado = localStorage.getItem(STORAGE_KEY);
+
+      if (guardado) {
+        generarBtn.textContent = "Ya generé mi examen — entrar";
+        modalAviso.style.display = "block";
+        generarBtn.addEventListener("click", () => {
+          esconderPreguntas(JSON.parse(guardado));
+          cerrarModal();
+        });
+      } else {
+        generarBtn.addEventListener("click", () => {
+          const examen = generarExamen();
+          if (!examen) return;
+          localStorage.setItem(STORAGE_KEY, JSON.stringify(examen));
+          esconderPreguntas(examen);
+          cerrarModal();
+        });
+      }
+    </script>
+
+    <style>
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: system-ui, sans-serif;
+        background: #faf9f7;
+        color: #1a1a1a;
+      }
+
+      /* MODAL */
+      .mw-modal-wrap {
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.55);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 999;
+        transition: opacity 0.35s;
+      }
+      .mw-modal {
+        background: #fff;
+        border-radius: 16px;
+        padding: 2.5rem;
+        max-width: 400px;
+        width: 90%;
+        text-align: center;
+      }
+      .mw-modal-cat {
+        font-size: 3rem;
+        margin-bottom: 0.5rem;
+      }
+      .mw-modal h2 {
+        font-size: 1.4rem;
+        font-weight: 500;
+        margin-bottom: 0.4rem;
+      }
+      .mw-modal p {
+        font-size: 0.9rem;
+        color: #666;
+        margin-bottom: 1.5rem;
+        line-height: 1.6;
+      }
+      .mw-modal-btn {
+        background: #e05c2e;
+        color: #fff;
+        border: none;
+        padding: 0.8rem 2rem;
+        border-radius: 8px;
+        font-size: 0.95rem;
+        cursor: pointer;
+        font-weight: 500;
+        width: 100%;
+      }
+      .mw-modal-btn:hover {
+        background: #c94f25;
+      }
+
+      /* NAV */
+      .mw-nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem 2rem;
+        background: #fff;
+        border-bottom: 0.5px solid #e8e6e2;
+        position: sticky;
+        top: 0;
+        z-index: 10;
+      }
+      .mw-brand {
+        font-size: 1.1rem;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+      .mw-brand span {
+        color: #e05c2e;
+      }
+      .mw-navlinks {
+        display: flex;
+        gap: 1.5rem;
+        list-style: none;
+      }
+      .mw-navlinks a {
+        font-size: 0.9rem;
+        color: #666;
+        text-decoration: none;
+        transition: color 0.2s;
+      }
+      .mw-navlinks a:hover {
+        color: #1a1a1a;
+      }
+
+      /* HERO */
+      .mw-hero {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        min-height: 460px;
+        overflow: hidden;
+      }
+      .mw-hero-left {
+        background: #1a1a1a;
+        padding: 4rem 3rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .mw-hero-left h1 {
+        font-size: 2.8rem;
+        font-weight: 500;
+        color: #fff;
+        line-height: 1.1;
+        margin-bottom: 1rem;
+      }
+      .mw-hero-left h1 em {
+        color: #e05c2e;
+        font-style: normal;
+      }
+      .mw-hero-left p {
+        color: #aaa;
+        font-size: 1rem;
+        line-height: 1.7;
+        margin-bottom: 1.75rem;
+      }
+      .mw-hero-btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        background: #e05c2e;
+        color: #fff;
+        padding: 0.7rem 1.5rem;
+        border-radius: 6px;
+        text-decoration: none;
+        font-size: 0.9rem;
+        font-weight: 500;
+        width: fit-content;
+        transition: background 0.2s;
+      }
+      .mw-hero-btn:hover {
+        background: #c94f25;
+      }
+      .mw-hero-right {
+        position: relative;
+        overflow: hidden;
+      }
+      .mw-hero-right img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .mw-hero-badge {
+        position: absolute;
+        bottom: 1.25rem;
+        left: 1.25rem;
+        background: rgba(0, 0, 0, 0.5);
+        color: #fff;
+        font-size: 0.72rem;
+        padding: 0.35rem 0.7rem;
+        border-radius: 4px;
+      }
+
+      /* SECCIONES */
+      .mw-section {
+        padding: 3.5rem 2rem;
+        max-width: 1100px;
+        margin: 0 auto;
+      }
+      .mw-tag {
+        display: inline-block;
+        background: #fef0ea;
+        color: #c94f25;
+        font-size: 0.72rem;
+        font-weight: 500;
+        padding: 0.25rem 0.6rem;
+        border-radius: 4px;
+        margin-bottom: 1rem;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+      }
+      .mw-section-title {
+        font-size: 1.5rem;
+        font-weight: 500;
+        margin-bottom: 0.4rem;
+      }
+      .mw-section-sub {
+        color: #666;
+        font-size: 0.9rem;
+        margin-bottom: 2rem;
+      }
+
+      /* CARDS */
+      .mw-cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1.25rem;
+      }
+      .mw-card {
+        background: #fff;
+        border: 0.5px solid #e8e6e2;
+        border-radius: 12px;
+        overflow: hidden;
+        cursor: pointer;
+        transition:
+          transform 0.2s,
+          box-shadow 0.2s;
+      }
+      .mw-card:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.07);
+      }
+      .mw-card-img {
+        height: 160px;
+        overflow: hidden;
+      }
+      .mw-card-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.3s;
+      }
+      .mw-card:hover .mw-card-img img {
+        transform: scale(1.05);
+      }
+      .mw-card-body {
+        padding: 1rem 1.1rem;
+      }
+      .mw-card-tag {
+        font-size: 0.72rem;
+        font-weight: 500;
+        color: #e05c2e;
+        text-transform: uppercase;
+        letter-spacing: 0.04em;
+        margin-bottom: 0.3rem;
+      }
+      .mw-card-body h3 {
+        font-size: 1rem;
+        font-weight: 500;
+        margin-bottom: 0.3rem;
+      }
+      .mw-card-body p {
+        font-size: 0.85rem;
+        color: #666;
+        line-height: 1.5;
+      }
+
+      /* GALERÍA */
+      .mw-gallery-bg {
+        background: #f4f2ee;
+        padding: 3.5rem 2rem;
+      }
+      .mw-gallery-inner {
+        max-width: 1100px;
+        margin: 0 auto;
+      }
+      .mw-gallery-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto auto;
+        gap: 12px;
+        margin-top: 2rem;
+      }
+      .mw-gallery-item {
+        border-radius: 10px;
+        overflow: hidden;
+        background: #ddd;
+      }
+      .mw-gallery-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+        transition: transform 0.3s;
+      }
+      .mw-gallery-item:hover img {
+        transform: scale(1.04);
+      }
+      .mw-gallery-item.tall {
+        grid-row: span 2;
+      }
+      .mw-gallery-item.tall img {
+        height: 340px;
+      }
+      .mw-gallery-item:not(.tall) img {
+        height: 160px;
+      }
+
+      /* CURIOSIDADES */
+      .mw-facts {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1rem;
+        margin-top: 2rem;
+      }
+      .mw-fact {
+        background: #fff;
+        border: 0.5px solid #e8e6e2;
+        border-radius: 10px;
+        padding: 1.25rem;
+        display: flex;
+        gap: 0.75rem;
+        align-items: flex-start;
+      }
+      .mw-fact-icon {
+        width: 36px;
+        height: 36px;
+        border-radius: 8px;
+        background: #fef0ea;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        font-size: 1.1rem;
+      }
+      .mw-fact-text h4 {
+        font-size: 0.9rem;
+        font-weight: 500;
+        margin-bottom: 0.2rem;
+      }
+      .mw-fact-text p {
+        font-size: 0.82rem;
+        color: #666;
+        line-height: 1.5;
+      }
+
+      /* FOOTER */
+      .mw-footer {
+        background: #1a1a1a;
+        color: #aaa;
+        padding: 3rem 2rem 1.5rem;
+      }
+      .mw-footer-inner {
+        max-width: 1100px;
+        margin: 0 auto;
+      }
+      .mw-footer-cols {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        gap: 3rem;
+        margin-bottom: 2.5rem;
+      }
+      .mw-footer h4 {
+        color: #fff;
+        font-size: 0.9rem;
+        font-weight: 500;
+        margin-bottom: 0.75rem;
+      }
+      .mw-footer p {
+        font-size: 0.85rem;
+        line-height: 1.6;
+      }
+      .mw-footer ul {
+        list-style: none;
+      }
+      .mw-footer li {
+        margin-bottom: 0.4rem;
+      }
+      .mw-footer a {
+        color: #aaa;
+        text-decoration: none;
+        font-size: 0.85rem;
+      }
+      .mw-footer a:hover {
+        color: #fff;
+      }
+      .mw-footer-bottom {
+        border-top: 0.5px solid #333;
+        padding-top: 1.25rem;
+        font-size: 0.8rem;
+        color: #555;
+      }
+    </style>
+  </body>
+</html>

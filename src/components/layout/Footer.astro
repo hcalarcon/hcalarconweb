@@ -2,19 +2,25 @@
 import Container from "../ui/Container.astro";
 ---
 
-<footer class="border-t border-(--border) py-10 print:hidden">
+<footer class="border-t border-(--border) bg-(--surface) py-10 print:hidden">
   <Container>
     <div
       class="flex flex-col gap-4 text-sm text-(--text-muted) md:flex-row md:items-center md:justify-between"
     >
       <p>© 2026 Hernaldo Cristian Alarcón</p>
 
-      <div class="flex items-center gap-6">
-        <a href="/">Inicio</a>
+      <div class="flex items-center gap-5 md:gap-6">
+        <a class="transition hover:text-(--text)" href="/">Inicio</a>
 
-        <a href="/cv">CV</a>
+        <a class="transition hover:text-(--text)" href="/cv">CV</a>
 
-        <a href="https://github.com/hcalarcon" target="_blank"> GitHub </a>
+        <a
+          class="transition hover:text-(--text)"
+          href="https://github.com/hcalarcon"
+          target="_blank"
+        >
+          GitHub
+        </a>
       </div>
     </div>
   </Container>

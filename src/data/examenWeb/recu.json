@@ -1,0 +1,299 @@
+[
+  {
+    "id": "N001",
+    "pregunta": "Una empresa desea publicar información institucional que cambia pocas veces al año. Analice si una página estática sería una buena solución y justifique."
+  },
+  {
+    "id": "N002",
+    "pregunta": "Un usuario afirma que Internet y la Web son exactamente lo mismo. Analice la afirmación y explique las diferencias."
+  },
+  {
+    "id": "N003",
+    "pregunta": "Explique qué función cumplen HTML, HTTP y HTTPS dentro del funcionamiento de una página web y cómo se relacionan entre sí."
+  },
+  {
+    "id": "N004",
+    "pregunta": "¿Qué papel cumple un navegador dentro de la Web? Explique qué ocurriría si los navegadores no existieran."
+  },
+  {
+    "id": "N005",
+    "pregunta": "Mencione tres navegadores web actuales y compare brevemente alguna característica relevante entre ellos."
+  },
+  {
+    "id": "N006",
+    "pregunta": "Explique qué es HTML y describa qué problemas tendría una página web si HTML no existiera."
+  },
+  {
+    "id": "N007",
+    "pregunta": "Un estudiante afirma que HTML es un lenguaje de programación. Analice la afirmación y justifique su respuesta."
+  },
+  {
+    "id": "N008",
+    "pregunta": "Explique la arquitectura cliente-servidor utilizando como ejemplo una red social o una tienda online."
+  },
+  {
+    "id": "N009",
+    "pregunta": "Describa el recorrido completo de una solicitud web desde que el usuario escribe una URL hasta que el contenido aparece en pantalla."
+  },
+  {
+    "id": "N010",
+    "pregunta": "Explique qué responsabilidades tiene el cliente dentro de una aplicación web y proporcione un ejemplo."
+  },
+  {
+    "id": "N011",
+    "pregunta": "Explique qué responsabilidades tiene el servidor dentro de una aplicación web y proporcione un ejemplo."
+  },
+  {
+    "id": "N012",
+    "pregunta": "Analice la estructura de una etiqueta HTML e indique la función que cumple cada una de sus partes."
+  },
+  {
+    "id": "N013",
+    "pregunta": "¿Qué problemas podrían aparecer si una página contiene etiquetas mal cerradas o incorrectamente anidadas?"
+  },
+  {
+    "id": "N014",
+    "pregunta": "Explique qué es un atributo HTML y mencione ejemplos reales de utilización."
+  },
+  {
+    "id": "N015",
+    "pregunta": "Compare distintos tipos de atributos HTML e indique situaciones donde utilizaría cada uno."
+  },
+  {
+    "id": "N016",
+    "pregunta": "Un desarrollador elimina todos los atributos class de un sitio web. Analice las posibles consecuencias."
+  },
+  {
+    "id": "N017",
+    "pregunta": "Una imagen importante no puede cargarse. Explique la utilidad del atributo alt en esta situación."
+  },
+  {
+    "id": "N018",
+    "pregunta": "Explique cómo aria-label contribuye a mejorar la accesibilidad de una página web."
+  },
+  {
+    "id": "N019",
+    "pregunta": "Describa la estructura mínima de un documento HTML y explique la función de cada sección."
+  },
+  {
+    "id": "N020",
+    "pregunta": "¿Por qué la etiqueta html es considerada la raíz del documento?"
+  },
+  {
+    "id": "N021",
+    "pregunta": "Explique qué tipo de información suele ubicarse dentro de head y por qué es importante."
+  },
+  {
+    "id": "N022",
+    "pregunta": "Explique qué elementos suelen encontrarse dentro de body y cuál es su finalidad."
+  },
+  {
+    "id": "N023",
+    "pregunta": "¿Por qué la información ubicada dentro de head normalmente no es visible para el usuario?"
+  },
+  {
+    "id": "N024",
+    "pregunta": "Compare elementos block e inline utilizando ejemplos concretos."
+  },
+  {
+    "id": "N025",
+    "pregunta": "Explique por qué los hipervínculos fueron una innovación fundamental para la World Wide Web."
+  },
+  {
+    "id": "N026",
+    "pregunta": "¿Qué función cumple href y qué ocurriría si un enlace no lo incluyera?"
+  },
+  {
+    "id": "N027",
+    "pregunta": "Explique los distintos tipos de direccionamiento que puede utilizar una URL y mencione situaciones donde utilizaría cada uno."
+  },
+  {
+    "id": "N028",
+    "pregunta": "Un sitio web cambia de dominio. Analice ventajas y desventajas de utilizar URLs absolutas y relativas."
+  },
+  {
+    "id": "N029",
+    "pregunta": "Explique el propósito de los formularios web y mencione ejemplos cotidianos de utilización."
+  },
+  {
+    "id": "N030",
+    "pregunta": "¿Qué función cumple el atributo action en un formulario y qué problemas podrían aparecer si está mal configurado?"
+  },
+  {
+    "id": "N031",
+    "pregunta": "¿Puede existir un input fuera de un formulario? Justifique y mencione posibles casos de uso."
+  },
+  {
+    "id": "N032",
+    "pregunta": "Diseñe conceptualmente una tabla para registrar alumnos y explique el uso de table, tr, th y td."
+  },
+  {
+    "id": "N033",
+    "pregunta": "¿En qué situaciones utilizaría una lista de definiciones en lugar de una lista tradicional?"
+  },
+  {
+    "id": "N034",
+    "pregunta": "Seleccione cinco etiquetas HTML distintas y justifique su utilización dentro de un sitio web real."
+  },
+  {
+    "id": "N035",
+    "pregunta": "Clasifique distintos tipos de etiquetas HTML según el contenido que representan."
+  },
+  {
+    "id": "N036",
+    "pregunta": "Explique cómo influye la jerarquía de encabezados en la organización y comprensión de un documento."
+  },
+  {
+    "id": "N037",
+    "pregunta": "Explique la importancia de las etiquetas semánticas para usuarios, desarrolladores y motores de búsqueda."
+  },
+  {
+    "id": "N038",
+    "pregunta": "Mencione ventajas y limitaciones de HTML dentro del desarrollo web moderno."
+  },
+  {
+    "id": "N039",
+    "pregunta": "Explique cómo se relacionan HTML, CSS y JavaScript dentro de una página web."
+  },
+  {
+    "id": "N040",
+    "pregunta": "Describa el proceso completo mediante el cual una página web llega desde el servidor hasta el navegador del usuario."
+  },
+
+  {
+    "id": "H001",
+    "pregunta": "Explique la importancia de la propuesta realizada por Tim Berners-Lee en 1989 para el nacimiento de la World Wide Web."
+  },
+  {
+    "id": "H002",
+    "pregunta": "¿Por qué el desarrollo de HTML, HTTP y las URLs en 1990 fue fundamental para la Web?"
+  },
+  {
+    "id": "H003",
+    "pregunta": "¿Qué importancia tuvo la primera página web publicada en 1991 para la difusión de la Web?"
+  },
+  {
+    "id": "H004",
+    "pregunta": "Analice cómo HTML contribuyó al crecimiento de la Web durante sus primeros años."
+  },
+  {
+    "id": "H005",
+    "pregunta": "Explique por qué Mosaic fue un punto de inflexión para la popularización de Internet."
+  },
+  {
+    "id": "H006",
+    "pregunta": "Mencione dos acontecimientos importantes ocurridos en 1994 y explique su impacto."
+  },
+  {
+    "id": "H007",
+    "pregunta": "Analice cómo JavaScript y PHP modificaron el desarrollo web a partir de 1995."
+  },
+  {
+    "id": "H008",
+    "pregunta": "¿Qué problema vino a resolver CSS y cómo cambió la forma de construir sitios web?"
+  },
+  {
+    "id": "H009",
+    "pregunta": "Explique por qué la aparición de Google en 1998 modificó la forma en que los usuarios accedían a la información."
+  },
+  {
+    "id": "H010",
+    "pregunta": "¿Qué permitía AJAX y por qué fue considerado un avance importante para las aplicaciones web?"
+  },
+  {
+    "id": "H011",
+    "pregunta": "Analice la importancia de Wikipedia y JSON dentro de la evolución de la Web."
+  },
+  {
+    "id": "H012",
+    "pregunta": "¿Qué papel cumplió Firefox en la competencia y evolución de los navegadores?"
+  },
+  {
+    "id": "H013",
+    "pregunta": "Explique cómo WordPress facilitó la creación y publicación de sitios web."
+  },
+  {
+    "id": "H014",
+    "pregunta": "¿Qué características diferencian a la Web 2.0 de la Web de los años anteriores?"
+  },
+  {
+    "id": "H015",
+    "pregunta": "Analice cómo YouTube modificó la producción y el consumo de contenido en Internet."
+  },
+  {
+    "id": "H016",
+    "pregunta": "Explique el impacto que tuvieron jQuery y AWS en el desarrollo web moderno."
+  },
+  {
+    "id": "H017",
+    "pregunta": "¿Por qué la aparición del iPhone y GitHub fue relevante para la evolución de la Web?"
+  },
+  {
+    "id": "H018",
+    "pregunta": "Analice las mejoras introducidas por HTML5 y su impacto en el desarrollo web."
+  },
+  {
+    "id": "H019",
+    "pregunta": "Explique qué permitió Node.js dentro del ecosistema JavaScript y por qué fue importante."
+  },
+  {
+    "id": "H020",
+    "pregunta": "¿Por qué surgió el Responsive Design y qué problemas buscaba resolver?"
+  },
+  {
+    "id": "H021",
+    "pregunta": "Explique qué mejoras incorporó CSS3 y cómo ampliaron las posibilidades del diseño web."
+  },
+  {
+    "id": "H022",
+    "pregunta": "¿Qué son los Web Components y qué ventajas ofrecen?"
+  },
+  {
+    "id": "H023",
+    "pregunta": "¿Por qué React cambió la manera de desarrollar interfaces web modernas?"
+  },
+  {
+    "id": "H024",
+    "pregunta": "Explique la importancia de la estandarización definitiva de HTML5 en 2014."
+  },
+  {
+    "id": "H025",
+    "pregunta": "Analice el impacto de ES6 en el desarrollo con JavaScript."
+  },
+  {
+    "id": "H026",
+    "pregunta": "¿Qué ventajas aporta TypeScript frente al uso exclusivo de JavaScript?"
+  },
+  {
+    "id": "H027",
+    "pregunta": "Explique qué es WebAssembly y qué problemas busca resolver."
+  },
+  {
+    "id": "H028",
+    "pregunta": "¿Por qué el debate sobre privacidad digital ganó relevancia a partir de 2018?"
+  },
+  {
+    "id": "H029",
+    "pregunta": "Explique qué significa que HTML sea un estándar vivo y cuáles son las ventajas de este enfoque."
+  },
+  {
+    "id": "H030",
+    "pregunta": "Analice cómo la pandemia aceleró la adopción de tecnologías web."
+  },
+  {
+    "id": "H031",
+    "pregunta": "¿Qué es Web3 y cuáles son las ideas principales asociadas a este concepto?"
+  },
+  {
+    "id": "H032",
+    "pregunta": "Explique cómo comenzó a integrarse la inteligencia artificial en la Web."
+  },
+  {
+    "id": "H033",
+    "pregunta": "Analice cómo la inteligencia artificial generativa está modificando el desarrollo web."
+  },
+  {
+    "id": "H034",
+    "pregunta": "¿Por qué hoy se considera a la Web una plataforma universal?"
+  }
+]
